@@ -1,11 +1,12 @@
 package main
 
 import (
-	"./list"
+	"./BTNode"
+	"fmt"
 )
 
 func main ()  {
-	arr := []int{2,7,4,8,10,4,6}
-	var l list.LNode   //{[] 0}
-	l.CreateListR(arr).Sort().DispList()
+	s := []rune("#ABCDKEFHGNS")
+	b := BTNode.Trans(s,1)
+	fmt.Print("%v",string(b.RChild.Data))
 }

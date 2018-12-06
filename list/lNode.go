@@ -139,7 +139,7 @@ func (n *LNode) DelMaxNode() *LNode {
 }
 
 /*
-排序
+排序   zhi
 	arr := []int{2,7,4,8,10,4,6}
 	var l list.LNode   //{[] 0}
 	l.CreateListR(arr).Sort().DispList()
@@ -150,12 +150,16 @@ func (n *LNode) Sort() *LNode  {
 	for p != nil {
 		q := p.Next
 		pre := n
+		//n.DispList()
+		//fmt.Println(pre.Next.Data,p.Data)
 		for pre.Next != nil && pre.Next.Data < p.Data {
 			pre = pre.Next
 		}
 		p.Next = pre.Next
+		//fmt.Println(pre.Next)
 		pre.Next = p
 		p = q
+		q.DispList()
 	}
 	return n
 }
