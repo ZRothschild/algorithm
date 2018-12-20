@@ -1,12 +1,13 @@
 package main
 
 import (
-	"./BTNode"
+	"./search"
 	"fmt"
 )
 
-func main ()  {
-	s := []rune("#ABCDKEFHGNS")
-	b := BTNode.Trans(s,1)
-	fmt.Print("%v",string(b.RChild.Data))
+func main() {
+
+	arr := []int{1, 2, 5, 8, 9}
+	j := search.BinarySearchRec(arr, 0, 4, 10)
+	fmt.Println("aaa", j)
 }
