@@ -6,6 +6,23 @@ import "fmt"
 串的基本操作
 */
 
+var (
+// nums = []int64{6, 4, -3, 5, -2, -1, 0, 1, -9}
+// nums := []int64{6, 4, 5, 0, 1, -3, -2, -1, -9}
+// i, j, tmp = 0, 0, 0
+)
+
+// for k, v := range nums {
+// 	if v >= 0 {
+// 		// nums[i],nums[j] = nums[j],nums[i]
+// 		i++
+// 		tmp = 0
+// 	} else {
+// 		j = k
+// 		tmp++
+// 	}
+// }
+
 func main() {
 	//var t  = SqString{
 	//	Data: []rune{'e','f','h','m'},
